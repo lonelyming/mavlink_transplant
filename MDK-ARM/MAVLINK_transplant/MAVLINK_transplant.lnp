@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"mavlink_transplant\startup_stm32f407xx.o"
+"mavlink_transplant\main.o"
+"mavlink_transplant\stm32f4xx_it.o"
+"mavlink_transplant\stm32f4xx_hal_msp.o"
+"mavlink_transplant\stm32f4xx_hal_tim.o"
+"mavlink_transplant\stm32f4xx_hal_tim_ex.o"
+"mavlink_transplant\stm32f4xx_hal_uart.o"
+"mavlink_transplant\stm32f4xx_hal_rcc.o"
+"mavlink_transplant\stm32f4xx_hal_rcc_ex.o"
+"mavlink_transplant\stm32f4xx_hal_flash.o"
+"mavlink_transplant\stm32f4xx_hal_flash_ex.o"
+"mavlink_transplant\stm32f4xx_hal_flash_ramfunc.o"
+"mavlink_transplant\stm32f4xx_hal_gpio.o"
+"mavlink_transplant\stm32f4xx_hal_dma_ex.o"
+"mavlink_transplant\stm32f4xx_hal_dma.o"
+"mavlink_transplant\stm32f4xx_hal_pwr.o"
+"mavlink_transplant\stm32f4xx_hal_pwr_ex.o"
+"mavlink_transplant\stm32f4xx_hal_cortex.o"
+"mavlink_transplant\stm32f4xx_hal.o"
+"mavlink_transplant\stm32f4xx_hal_exti.o"
+"mavlink_transplant\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "MAVLINK_transplant\MAVLINK_transplant.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MAVLINK_transplant.map" -o MAVLINK_transplant\MAVLINK_transplant.axf
